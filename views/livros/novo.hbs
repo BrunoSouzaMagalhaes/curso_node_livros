@@ -1,0 +1,12 @@
+Livros
+<form method="post" action="./">
+<input type="text" name="name" placeholder="Nome do autor" >
+<input type="number" name="pags" placeholder="Páginas" >
+<select name="AutoreId" id="id">
+    <option value="">Selecione</option>
+    {{#each autores}}
+        <option value="{{id}}">{{name}}</option>
+    {{/each}}
+</select>
+<input type="submit" value="Salvar">
+</form>
